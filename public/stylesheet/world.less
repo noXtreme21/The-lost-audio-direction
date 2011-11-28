@@ -1,0 +1,75 @@
+.world {
+	position: relative;
+	top: 40px; left: 60px;
+
+	background: #000;
+	border: 1px solid #888;
+	width: 90%;
+	height: 600px;
+
+	overflow: hidden;
+
+/*	-moz-box-shadow: 3px 3px 4px #888;
+	-webkit-box-shadow: 3px 3px 4px #888; */
+	box-shadow: 0px 0px 20px #fff;
+}
+
+.world .skyline {
+	position: absolute;
+	top: 0px; left: 0px;
+
+	background: url('/image/world/skyline.png') repeat-x 0px 0px;
+	width: 100%;
+	height: 600px;
+}
+
+.world .background {
+	position: absolute;
+	top: 140px; left: 0px;
+
+	background: url('/image/world/background.png') repeat-x 0px 0px;
+	width: 100%;
+	height: 340px;
+}
+
+.world .foreground {
+	position: absolute;
+	bottom: 0px; left: 0px;
+
+	background: url('/image/world/foreground.png') repeat-x 0px 0px;
+	width: 100%;
+	height: 171px;
+}
+
+.world .movementLayer {
+	position: absolute;
+	top: 370px; left: 0px;
+}
+
+.world .restartLayer {
+	position: relative;
+	top: 0px; left: 0px;
+
+	background: #000;
+	opacity: 0.8;
+
+	width: 100%;
+	height: 100%;
+
+	z-index: 100;
+
+	display: none;
+}
+
+.world .restartLayer div,
+.world .restartLayer div a{
+	position: relative;
+	top: 150px;
+
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	font-family: Verdana;
+	font-size: 30px;
+	color: #eee;
+}

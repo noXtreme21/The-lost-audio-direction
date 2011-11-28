@@ -1,0 +1,24 @@
+!!!
+html
+  head
+    title= title
+
+    link(rel='stylesheet', type='text/less', href='/stylesheet/main.less')
+    link(rel='stylesheet', type='text/less', href='/stylesheet/world.less')
+    link(rel='stylesheet', type='text/less', href='/stylesheet/person.less')
+
+    script(src='/socket.io/socket.io.js')
+    script(src='/script/external/less.js')
+    script(src='/script/external/jquery.js')
+    script(src='/script/external/soundmanager2.js')
+
+    script(src='/script/main.js')
+    script(src='/script/world.js')
+    script(src='/script/person.js')
+    script(src='/script/collision.js')
+
+    script
+        var socket = io.connect('http://127.0.0.1:3002');
+        var currentMode = #{currentMode};
+
+  body!= body

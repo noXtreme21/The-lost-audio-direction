@@ -1,0 +1,27 @@
+script(type='text/javascript')
+	var userId = #{userId};
+
+div(class='world')
+	div(class='skyline')
+	div(class='background')
+
+	div(class='movementLayer')
+		div(id='userId1', class='person')
+			div(class='bloodFx')
+
+	div(class='movementLayer')
+		div(id='userId2', class='person')
+
+	div(class='foreground')
+
+	div(id='statusPlayer1')
+		div(class='energy')
+
+	div(id='statusPlayer2')
+		div(class='energy')
+
+	div(class='restartLayer')
+		div(id='message', class='text')
+		div(class='text') <a href="#" onclick="document.location.href = document.location.href;">click here to restart</a>
+
+div(id='debug')
